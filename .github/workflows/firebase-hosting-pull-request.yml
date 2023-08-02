@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
-      - env:
+        env:
           CI: true
           FIREBASE_APP_ID: '${{ secrets.FIREBASE_APP_ID }}'
           FIREBASE_API_KEY: '${{ secrets.FIREBASE_API_KEY }}'
